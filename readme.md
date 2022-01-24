@@ -21,13 +21,17 @@ To seed the database with some initial data, in a web browser while the applicat
 ### 1. Initial Requirements 
 
 1. Display cars in a table 
-	- Show features of specific car (Make, model, drivetrain, number of doors, windows, convertible)
+	- Show features of specific car (Make, model, mileage, year)
 	- filter table by car body (Sedan, Truck, Crossover, Coupe, etc.) 
 
 2. View detailed information about individual cars
 	- "Detailed" view that shows in-depth information about a car
+	- Body type, transmission, drivetrain, etc
 
 3. View service history of a concrete car
+	- Service date
+	- Mileage at service date
+	- Service description
 
 	 
 ### 2. Analysis 
