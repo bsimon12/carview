@@ -1,0 +1,61 @@
+﻿@model CarViewer.Models.CarDetailViewModel
+
+<div class="row">
+    <div class="jumbotron">
+        <h1 class="display-4">
+            @Model.Year @Model.Make @Model.Model
+        </h1>
+        <hr class="my-4" />
+        <ul class="list-group">
+            <li class="list-group-item">VIN: @Model.VIN</li>
+            <li class="list-group-item">Make: @Model.Make</li>
+            <li class="list-group-item">Model: @Model.Model</li>
+            <li class="list-group-item">Year: @Model.Year</li>
+            <li class="list-group-item">Drivetrain: @Model.DriveTrain.ToString()</li>
+            <li class="list-group-item">Transmission: @Model.Transmission.ToString()</li>
+            <li class="list-group-item">Classification: @Model.Classification</li>
+            <li class="list-group-item">Doors: @Model.DoorCount</li>
+            <li class="list-group-item">Windows: @Model.WindowCount</li>
+            <li class="list-group-item">Seats: @Model.SeatCount</li>
+        </ul>
+    </div>
+</div>
+
+@if (Model.ServiceRecords != null && Model.ServiceRecords.Count() > 0) {
+    <hr class="my-4" />
+    <div class="row">
+        <div class="jumbotron">
+            <h2 class="display-6">Service History</h2>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Service Date
+                    </th>
+                    <th scope="col">
+                        Mileage to date
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+            </thead>
+
+            @foreach (var serviceRecord in Model.ServiceRecords) {
+                <tr>
+                    <td>
+                        @serviceRecord.ServiceDate
+                    </td>
+                    <td>
+                        @serviceRecord.MileageToDate
+                    </td>
+                    <td>
+                        @serviceRecord.Description
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+}
+    
