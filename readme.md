@@ -22,7 +22,6 @@ To seed the database with some initial data, in a web browser while the applicat
 
 1. Display cars in a table 
 	- Show features of specific car (Make, model, mileage, year)
-	- filter table by car body (Sedan, Truck, Crossover, Coupe, etc.) 
 
 2. View detailed information about individual cars
 	- "Detailed" view that shows in-depth information about a car
