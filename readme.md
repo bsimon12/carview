@@ -16,7 +16,7 @@ This should guarantee that the database is created.
 
 To seed the database with some initial data, in a web browser while the application is running, navigate to /Home/Seed. Nothing should happen in the browser but upon navigating back, some sample data should be on the home page. 
 
-## Miniature SLDC
+## Miniature SDLC
 
 ### 1. Initial Requirements 
 
